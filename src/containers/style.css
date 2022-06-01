@@ -1,14 +1,14 @@
 .text {
-  padding-top: calc(12 / 16)rem;
+  padding-top: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
 
 .share {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .share-icon {
-  height: calc(32 / 16)rem;
+  height: 2rem;
   cursor: pointer;
 }
