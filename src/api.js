@@ -16,4 +16,9 @@ const getNews = (subject) =>
     .then((response) => response.json())
     .catch(handleError);
 
-export default { getNews };
+const getNewsById = (subject, id) =>
+  fetch(`${URL}/${subject}/${id}`, params)
+    .then((response) => response.json())
+    .catch(handleError);
+
+export default { getNews, getNewsById };
