@@ -3,6 +3,7 @@ import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 import "./App.css";
 import Home from "./containers/Home";
+import Post from "./containers/Post";
 
 function App() {
   return (
@@ -10,8 +11,11 @@ function App() {
       <section>
         <BrowserRouter>
           <Switch>
-            <Route path="/">
+            <Route path="/" exact>
               <Home />
+            </Route>
+            <Route path="/:subject/:id">
+              <Post />
             </Route>
           </Switch>
         </BrowserRouter>
