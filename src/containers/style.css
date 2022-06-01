@@ -12,3 +12,7 @@
   height: 2rem;
   cursor: pointer;
 }
+
+article {
+  cursor: pointer;
+}
