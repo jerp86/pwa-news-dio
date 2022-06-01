@@ -6,7 +6,7 @@ const params = {
   },
 };
 
-const URL = "http://localhost:3333";
+const URL = "http://localhost:3333/api";
 
 const handleError = (err) =>
   console.error("There was an error calling the API!!!", err);
