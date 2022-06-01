@@ -3,6 +3,7 @@ import { Col, Row } from 'antd';
 
 import api from '../api';
 import Economy from './components/Economy';
+import Technology from './components/Technology';
 
 const Home = () => {
   const [news, setNews] = useState({});
@@ -44,6 +45,7 @@ const Home = () => {
       <Row gutter={[16, 16]}>
         <Col span={24}>
           <h2>Technology</h2>
+          <Technology values={news?.technology} />
         </Col>
       </Row>
     </div>
