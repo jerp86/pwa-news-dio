@@ -2,6 +2,7 @@ import React, { memo, useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
 
 import api from '../api';
+import Economy from './components/Economy';
 
 const Home = () => {
   const [news, setNews] = useState({});
@@ -39,6 +40,7 @@ const Home = () => {
       <Row gutter={[16, 16]}>
         <Col span={24} md={16}>
           <h2>Economy</h2>
+          <Economy values={news?.economy} />
         </Col>
       </Row>
       <hr />
