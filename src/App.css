@@ -1,5 +1,10 @@
 @import '~antd/dist/antd.css';
 
+main > section > div {
+  margin: 0.5rem auto;
+  width: clamp(18.75rem, 144rem, 90vw);
+}
+
 article > div {
   width: 100%;
   margin: auto;
@@ -8,4 +13,10 @@ article > div {
   align-items: center;
   max-width: 32.4rem;
   height: 24.3rem;
+}
+
+@media only screen and (max-width : 425px) {
+   html, body {
+     font-size: 12px;
+   }
 }

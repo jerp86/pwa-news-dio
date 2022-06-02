@@ -1,10 +1,12 @@
 import React, { memo, useEffect, useState } from 'react';
-import { Col, Row } from 'antd';
+import { Col, Row, Typography } from 'antd';
 
 import api from '../api';
 import Economy from './components/Economy';
 import Technology from './components/Technology';
 import World from './components/World';
+
+const { Title } = Typography;
 
 const Home = () => {
   const [news, setNews] = useState({});
@@ -35,18 +37,18 @@ const Home = () => {
     <div>
       <Row gutter={[16, 16]}>
         <Col span={24} md={16}>
-          <h2>World</h2>
+          <Title level={2}>World</Title>
           <World values={news?.world} />
         </Col>
         <Col span={24} md={8}>
-          <h2>Economy</h2>
+          <Title level={2}>Economy</Title>
           <Economy values={news?.economy} />
         </Col>
       </Row>
       <hr />
       <Row gutter={[16, 16]}>
         <Col span={24}>
-          <h2>Technology</h2>
+          <Title level={2}>Technology</Title>
           <Technology values={news?.technology} />
         </Col>
       </Row>
