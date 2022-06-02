@@ -33,6 +33,10 @@
 
 Projeto desenvolvido através do desafio de projeto **Criando uma aplicação ReactJS de notícias utilizando PWA**, da plataforma [DIO\_.](https://www.dio.me/), ministrado pelo professor [Bruno Carneiro (@Tautorn)](https://github.com/Tautorn).
 
+Neste desafio é proposto o desenvolvimento de uma api bem simples, utilizando arquivos json, e por conta disso, resolvi utilizar o utilitário `json-server`, que através de arquivos json monta uma fake api.
+
+Para que o projeto rode da maneira correta, é necessário utilizar o script `server`.
+
 ## :interrobang: Motivo
 
 Este desafio de projeto faz parte do _Bootcamp LocalizaLabs React Developer_, onde você aprenderá os conceitos de desenvolvimento de software para criação de soluções digitais, de desenvolvimento front-end e ReactJS para atuação em projetos de desenvolvimento web e de componentes da interface de usuários. O Bootcamp LocalizaLabs React developer faz parte do programa Órbi Academy Techboost, iniciativa da DIO junto ao Órbi Conecta, um dos principais hubs de inovação do Brasil. O Órbi Academy Techboost, é um dos maiores programas brasileiros de formação em carreiras de tecnologia e irá distribuir mais de 130 mil bolsas de estudo até 2022, impactando toda a comunidade tech brasileira.
@@ -59,7 +63,7 @@ Para copiar o projeto, utilize os comandos:
   ❯ git clone https://github.com/jerp86/pwa-news-dio.git
 
   # Entrar no diretório
-  ❯ cd react-dio
+  ❯ cd pwa-news-dio
 ```
 
 Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
@@ -70,8 +74,11 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
   # Instalar as dependências
   ❯ yarn
 
+  # Iniciar o server
+  ❯ yarn server
+
   # Iniciar o projeto
-  ❯ yarn dev
+  ❯ yarn start
 ```
 
 **Utilizando npm**
@@ -80,8 +87,11 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
   # Instalar as dependências
   ❯ npm install
 
+  # Iniciar o server
+  ❯ npm run server
+
   # Iniciar o projeto
-  ❯ npm run dev
+  ❯ npm run start
 ```
 
 ---
